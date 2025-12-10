@@ -18,7 +18,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/feature.png.webp"
-            alt="Mexican food background"
+            alt="Exterior of Taco Shop in Reno"
             fill
             className="object-cover"
             priority
@@ -75,12 +75,7 @@ export default function Home() {
               </div>
             </div>
             <div className="relative h-80 rounded-lg overflow-hidden shadow-xl">
-              <Image
-                src="/placeholder.svg?height=600&width=800"
-                alt="Taco Shop Restaurant"
-                fill
-                className="object-cover"
-              />
+              <Image src="/images/patio.webp" alt="Taco Shop patio seating" fill className="object-cover" />
             </div>
           </div>
         </div>

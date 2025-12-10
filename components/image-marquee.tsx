@@ -6,44 +6,44 @@ import Image from "next/image"
 // Image data for the marquee
 const images = [
   {
-    src: "/placeholder.svg?height=400&width=600",
-    alt: "Delicious tacos on a plate",
-    caption: "Our Famous Tacos",
+    src: "/images/al-pastor.webp",
+    alt: "Al pastor tacos topped with pineapple",
+    caption: "Al Pastor Tacos",
   },
   {
-    src: "/placeholder.svg?height=400&width=600",
-    alt: "Taco Shop storefront",
-    caption: "Our Location",
+    src: "/images/cheeseburger.webp",
+    alt: "Cheeseburger taco sizzling on the griddle",
+    caption: "Cheeseburger Tacos",
   },
   {
-    src: "/placeholder.svg?height=400&width=600",
-    alt: "Fresh ingredients",
-    caption: "Fresh Ingredients",
+    src: "/images/fish.webp",
+    alt: "Crispy fish tacos with cabbage slaw",
+    caption: "Crispy Fish Tacos",
   },
   {
-    src: "/placeholder.svg?height=400&width=600",
-    alt: "Customers enjoying food",
-    caption: "Happy Customers",
+    src: "/images/patio.webp",
+    alt: "Outdoor patio with guests dining",
+    caption: "Patio Dining",
   },
   {
-    src: "/placeholder.svg?height=400&width=600",
-    alt: "Taco preparation",
-    caption: "Made with Love",
+    src: "/images/doors.webp",
+    alt: "Taco Shop entrance doors",
+    caption: "Front Entrance",
   },
   {
-    src: "/placeholder.svg?height=400&width=600",
-    alt: "Interior of restaurant",
-    caption: "Cozy Atmosphere",
+    src: "/images/sign.webp",
+    alt: 'Exterior "Get Tacos" sign',
+    caption: "Exterior",
   },
   {
-    src: "/placeholder.svg?height=400&width=600",
-    alt: "Specialty tacos",
-    caption: "Specialty Tacos",
+    src: "/images/menu.jpeg",
+    alt: "Taco Shop printed menu",
+    caption: "House Menu",
   },
   {
-    src: "/placeholder.svg?height=400&width=600",
-    alt: "Outdoor seating area",
-    caption: "Outdoor Seating",
+    src: "/images/feature.png.webp",
+    alt: "Exterior of Taco Shop",
+    caption: "Storefront",
   },
 ]
 
