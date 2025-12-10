@@ -1,17 +1,6 @@
-interface MenuItem {
-  name: string
-  description?: string
-  price?: string
-}
+import type { MenuSectionData } from "@/lib/site-content"
 
-interface MenuSectionProps {
-  title: string
-  description?: string
-  pricing?: string
-  items: MenuItem[]
-}
-
-export default function MenuSection({ title, description, pricing, items }: MenuSectionProps) {
+export default function MenuSection({ title, description, pricing, items }: MenuSectionData) {
   return (
     <div className="bg-white p-6 rounded-lg shadow-lg">
       <div className="border-b border-dark/20 pb-4 mb-6">

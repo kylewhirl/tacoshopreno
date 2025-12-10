@@ -1,4 +1,12 @@
-export default function Footer() {
+import type { ContactContent, ImportantContent, SocialLink } from "@/lib/site-content"
+
+interface FooterProps {
+  contact: ContactContent
+  important: ImportantContent
+  socialLinks: SocialLink[]
+}
+
+export default function Footer({ contact, important, socialLinks }: FooterProps) {
   const currentYear = new Date().getFullYear()
 
   return (
@@ -7,21 +15,39 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">Taco Shop</h3>
-            <p className="text-white/80">Authentic Mexican cuisine in the heart of Reno, Nevada.</p>
+            <p className="text-white/80">{important.highlight}</p>
           </div>
 
           <div>
             <h3 className="text-xl font-bold mb-4">Hours</h3>
-            <p className="text-white/80">Monday: Closed</p>
-            <p className="text-white/80">Tuesday - Saturday: 11:00 AM - 9:00 PM</p>
-            <p className="text-white/80">Sunday: Closed</p>
+            {contact.hours.map((entry) => (
+              <p key={`footer-${entry.label}-${entry.value}`} className="text-white/80">
+                {entry.label}: {entry.value}
+              </p>
+            ))}
           </div>
 
           <div>
             <h3 className="text-xl font-bold mb-4">Contact</h3>
-            <p className="text-white/80">811 S Center St, Reno, NV 89501</p>
-            <p className="text-white/80">Cheney Street Alley</p>
-            <p className="text-white/80">(775) 507-7515</p>
+            {contact.addressLines.map((line) => (
+              <p key={`footer-address-${line}`} className="text-white/80">
+                {line}
+              </p>
+            ))}
+            <p className="text-white/80 mt-2">{contact.phone}</p>
+            <div className="flex gap-4 mt-4">
+              {socialLinks.map((link) => (
+                <a
+                  key={`footer-social-${link.label}`}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white/70 hover:text-white"
+                >
+                  {link.label}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
 

@@ -1,0 +1,107 @@
+{
+  "hero": {
+    "title": "Authentic Mexican Cuisine",
+    "subtitle": "Experience the true flavors of Mexico at Taco Shop in Reno, Nevada.",
+    "primaryCta": { "label": "View Our Menu", "href": "#menu" },
+    "secondaryCta": { "label": "Call to Order", "href": "tel:+17755077515" }
+  },
+  "important": {
+    "announcement": "Family-owned and operated in the heart of downtown Reno.",
+    "highlight": "Authentic Mexican cuisine in the heart of Reno, Nevada."
+  },
+  "about": {
+    "heading": "Fresh & Authentic",
+    "highlight": "Mexican Food",
+    "paragraphs": [
+      "At Taco Shop, we pride ourselves on serving the most authentic Mexican cuisine in Reno. Our recipes have been passed down through generations, bringing the true flavors of Mexico to your plate.",
+      "We use only the freshest ingredients, locally sourced when possible, to create delicious tacos, burritos, and more that will transport your taste buds straight to Mexico."
+    ]
+  },
+  "contact": {
+    "addressLines": ["811 S Center St, Reno, NV 89501", "Cheney Street Alley"],
+    "phone": "(775) 507-7515",
+    "hours": [
+      { "label": "Tuesday - Saturday", "value": "11:00 AM - 9:00 PM" },
+      { "label": "Sunday", "value": "Closed" },
+      { "label": "Monday", "value": "Closed" }
+    ]
+  },
+  "socialLinks": [
+    { "label": "Facebook", "url": "https://facebook.com/tacoshopreno" },
+    { "label": "Instagram", "url": "https://instagram.com/tacoshopreno" }
+  ],
+  "menu": {
+    "sections": [
+      {
+        "title": "TACOS",
+        "description": "Soft corn tortillas, choice of salsa: roja, verde or pico",
+        "pricing": "2 for $7 or 3 for $9",
+        "items": [
+          { "name": "Carnitas", "description": "Crispy pork, onions, cilantro" },
+          { "name": "Pastor", "description": "Marinated pork, grilled onion & pineapple, cilantro" },
+          { "name": "Chorizo", "description": "Onions, cilantro" },
+          { "name": "Cheeseburger", "description": "American cheese, lettuce, tomato, onion, house spread" },
+          { "name": "Chicken", "description": "Onions, cilantro" },
+          { "name": "Asada", "description": "Onions, cilantro" },
+          { "name": "Crispy Fish Taco", "description": "Cabbage slaw, avocado crema" },
+          { "name": "Veggie", "description": "Fried cauliflower, green apple, green pepper, onions & cilantro" }
+        ]
+      },
+      {
+        "title": "NOT TACOS",
+        "description": "Sub any meat +$1",
+        "items": [
+          {
+            "name": "Burrito",
+            "price": "$9.50",
+            "description": "Chicken, cheese, black beans, rice, corn, pico de gallo, chips + salsa"
+          },
+          {
+            "name": "Nachos",
+            "price": "$10.25",
+            "description": "Chicken, cheese, black beans, corn, pico de gallo, avocado crema, sour cream, jalapeños"
+          },
+          {
+            "name": "Quesadilla",
+            "price": "$9",
+            "description": "Chicken, green & red peppers, cheese, onions, chipotle sauce, sour cream, salsa, corn"
+          },
+          {
+            "name": "3 Taquitos",
+            "price": "$7.50",
+            "description": "Chicken, tomato sauce, lettuce, cotija, sour cream"
+          },
+          {
+            "name": "Torta",
+            "price": "$9",
+            "description": "Choice of chicken, asada, pastor or carnitas, onion, lettuce, tomato, avocado, queso fresco, sour cream, jalapeños"
+          }
+        ]
+      },
+      {
+        "title": "SIDES",
+        "items": [
+          { "name": "Wholly Guacamole", "price": "$8", "description": "Choice of regular or mex" },
+          { "name": "Chips & Dips", "price": "$4", "description": "Choice of verde or rojo w/pico de gallo" },
+          { "name": "Black Beans", "price": "$4" },
+          { "name": "Rice", "price": "$4" },
+          { "name": "Sliced Avocado", "price": "$1" },
+          { "name": "Sour Cream", "price": "50 cents" },
+          { "name": "Cheese", "price": "$1" }
+        ]
+      },
+      {
+        "title": "DRINKS",
+        "items": [
+          {
+            "name": "Soda",
+            "price": "$3",
+            "description": "Can or bottled coke, diet coke, 7up, sprite, sidral, sangria, jarritos, (fruit punch, pineapple, mandarin, lime, strawberry or tamarind)"
+          },
+          { "name": "Bottled Water", "price": "$2" },
+          { "name": "Mineral Water", "price": "$3" }
+        ]
+      }
+    ]
+  }
+}
