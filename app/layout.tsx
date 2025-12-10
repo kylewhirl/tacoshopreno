@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     description,
     url: "https://tacoshopreno.com",
     siteName: "Taco Shop",
-    type: "restaurant",
+    type: "website",
     locale: "en_US",
     images: [
       {
