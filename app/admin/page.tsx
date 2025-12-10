@@ -27,6 +27,14 @@ export default function AdminPage() {
     }
   }, [])
 
+  useEffect(() => {
+    if (typeof document === "undefined") return
+    document.body.classList.add("admin-shell")
+    return () => {
+      document.body.classList.remove("admin-shell")
+    }
+  }, [])
+
   const persistToken = (token: string, remember: boolean) => {
     if (typeof window === "undefined") return
     if (remember && token) {
@@ -116,7 +124,7 @@ export default function AdminPage() {
   }
 
   return (
-    <div className="min-h-screen bg-light pb-10">
+    <div className="min-h-screen bg-light pb-10 admin-shell">
       <AdminDashboard
         githubToken={githubToken}
         onGithubTokenChange={handleTokenChange}

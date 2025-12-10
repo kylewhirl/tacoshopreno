@@ -26,6 +26,7 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
   SidebarProvider,
+  SidebarRail,
   SidebarTrigger,
 } from "@/components/ui/sidebar"
 import { Button } from "@/components/ui/button"
@@ -481,8 +482,8 @@ export default function AdminDashboard({
   }
 
   return (
-    <SidebarProvider>
-      <Sidebar collapsible="icon" className="bg-white">
+    <SidebarProvider defaultOpen={false}>
+      <Sidebar variant="sidebar" collapsible="offcanvas" className="border-r">
         <SidebarHeader className="border-b px-4 py-4">
           <p className="font-semibold text-lg">Taco Shop Admin</p>
           <p className="text-xs text-muted-foreground">Update site content</p>
@@ -500,9 +501,10 @@ export default function AdminDashboard({
           </SidebarMenu>
         </SidebarContent>
       </Sidebar>
-      <SidebarInset>
+      <SidebarRail />
+      <SidebarInset className="flex flex-col bg-light min-h-screen">
         <header className="sticky top-0 z-10 flex flex-wrap items-center gap-3 border-b bg-white px-6 py-4 shadow-sm">
-          <SidebarTrigger className="md:hidden" />
+          <SidebarTrigger className="shrink-0" />
           <div>
             <p className="font-semibold">Site Content Manager</p>
           </div>
@@ -530,7 +532,7 @@ export default function AdminDashboard({
           {(error || fetchError) && <p className="text-sm text-red-600">{error ?? fetchError}</p>}
           {!githubToken && <p className="text-sm text-amber-600">Enter a GitHub token in Settings to enable saving.</p>}
         </header>
-        <div className="p-6">
+        <div className="p-6 w-full">
           {isLoading && !draft && (
             <div className="flex items-center gap-2 text-muted-foreground">
               <Loader2 className="w-4 h-4 animate-spin" />

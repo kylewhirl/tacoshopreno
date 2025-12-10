@@ -80,6 +80,15 @@
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
+
+  .admin-shell {
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 9%;
+    --sidebar-accent: 12 76% 61%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 89.8%;
+    --sidebar-ring: 12 76% 61%;
+  }
 }
 
 @layer base {
