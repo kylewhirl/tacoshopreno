@@ -52,7 +52,13 @@ export default function Footer({ contact, important, socialLinks }: FooterProps)
         </div>
 
         <div className="border-t border-dark/30 mt-8 pt-8 text-center text-white/60">
-          <p>© {currentYear} Taco Shop. All rights reserved.</p>
+          <p>
+            © {currentYear} Taco Shop. All rights reserved. Created by{" "}
+            <a href="https://snoball.media" target="_blank" rel="noopener noreferrer" className="underline hover:text-white">
+              Snoball Media
+            </a>
+            .
+          </p>
         </div>
       </div>
     </footer>
