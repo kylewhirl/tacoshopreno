@@ -9,6 +9,7 @@ import ReviewsMarquee from "@/components/reviews-marquee"
 import CTAButton from "@/components/cta-button"
 import ContactMap from "@/components/contact-map"
 import MenuDisplay from "@/components/menu-display"
+import AnimatedInView from "@/components/animated-in-view"
 import { useSiteContent } from "@/hooks/use-site-content"
 import type { SiteContent } from "@/lib/site-content"
 
@@ -31,10 +32,26 @@ export default function HomeContent({ initialContent }: HomeContentProps) {
         </div>
 
         <div className="relative z-10 container mx-auto max-w-6xl px-4 text-center">
-          <p className="text-sm uppercase tracking-[0.3rem] text-white/70 mb-4">{important.announcement}</p>
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-lg">{hero.title}</h1>
-          <p className="text-xl md:text-2xl text-white mb-10 max-w-3xl mx-auto drop-shadow-md">{hero.subtitle}</p>
-          <p className="text-base text-white/80 mb-8">{important.highlight}</p>
+          <AnimatedInView as="p" className="text-sm uppercase tracking-[0.3rem] text-white/70 mb-4" variant="fade-in">
+            {important.announcement}
+          </AnimatedInView>
+          <AnimatedInView
+            as="h1"
+            className="text-5xl md:text-7xl font-bold text-white mb-6 drop-shadow-lg"
+            delay={80}
+          >
+            {hero.title}
+          </AnimatedInView>
+          <AnimatedInView
+            as="p"
+            className="text-xl md:text-2xl text-white mb-10 max-w-3xl mx-auto drop-shadow-md"
+            delay={160}
+          >
+            {hero.subtitle}
+          </AnimatedInView>
+          <AnimatedInView as="p" className="text-base text-white/80 mb-8" delay={240} variant="fade-in">
+            {important.highlight}
+          </AnimatedInView>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <CTAButton href={hero.primaryCta.href} variant="primary" className="w-full sm:w-auto">
@@ -51,18 +68,24 @@ export default function HomeContent({ initialContent }: HomeContentProps) {
 
       <section className="py-16 px-4 bg-white" id="about">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-dark">
+          <AnimatedInView as="h2" className="text-3xl md:text-4xl font-bold text-center mb-12 text-dark">
             {about.heading} <span className="text-coral">{about.highlight}</span>
-          </h2>
+          </AnimatedInView>
 
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               {about.paragraphs.map((paragraph, index) => (
-                <p key={`about-${index}`} className="text-lg text-dark mb-6">
+                <AnimatedInView
+                  as="p"
+                  key={`about-${index}`}
+                  className="text-lg text-dark mb-6"
+                  delay={100 + index * 80}
+                  variant="fade-in"
+                >
                   {paragraph}
-                </p>
+                </AnimatedInView>
               ))}
-              <div className="flex items-center space-x-4 text-green">
+              <AnimatedInView as="div" className="flex items-center space-x-4 text-green" variant="fade-in">
                 <Clock className="h-5 w-5" />
                 <div>
                   <p className="font-medium">Hours</p>
@@ -70,10 +93,15 @@ export default function HomeContent({ initialContent }: HomeContentProps) {
                     <p key={`${entry.label}-${entry.value}`}>{entry.label}: {entry.value}</p>
                   ))}
                 </div>
-              </div>
+              </AnimatedInView>
             </div>
-            <div className="relative h-80 rounded-lg overflow-hidden shadow-xl">
-              <Image src="/images/patio.webp" alt="Taco Shop patio seating" fill className="object-cover" />
+            <div className="relative h-80 rounded-lg overflow-hidden shadow-xl group">
+              <Image
+                src="/images/patio.webp"
+                alt="Taco Shop patio seating"
+                fill
+                className="object-cover transition-transform duration-500 group-hover:scale-105"
+              />
             </div>
           </div>
         </div>
@@ -83,9 +111,9 @@ export default function HomeContent({ initialContent }: HomeContentProps) {
 
       <section className="py-16 px-4 bg-blue/10" id="menu">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-dark">
+          <AnimatedInView as="h2" className="text-3xl md:text-4xl font-bold text-center mb-12 text-dark">
             Our <span className="text-coral">Menu</span>
-          </h2>
+          </AnimatedInView>
 
           <MenuDisplay sections={menu.sections} />
         </div>
@@ -93,15 +121,17 @@ export default function HomeContent({ initialContent }: HomeContentProps) {
 
       <section className="py-16 px-4 bg-white" id="contact">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-dark">
+          <AnimatedInView as="h2" className="text-3xl md:text-4xl font-bold text-center mb-12 text-dark">
             Find <span className="text-coral">Us</span>
-          </h2>
+          </AnimatedInView>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              <h3 className="text-2xl font-bold text-coral mb-6">Contact Information</h3>
+            <div className="bg-white p-6 rounded-lg shadow-lg transition-transform duration-300 transform-gpu hover:-translate-y-1 hover:shadow-xl">
+              <AnimatedInView as="h3" className="text-2xl font-bold text-coral mb-6">
+                Contact Information
+              </AnimatedInView>
 
-              <div className="space-y-4">
+              <AnimatedInView as="div" className="space-y-4" variant="fade-in">
                 <div className="flex items-start space-x-4">
                   <MapPin className="h-6 w-6 text-green mt-1" />
                   <div>
@@ -133,10 +163,12 @@ export default function HomeContent({ initialContent }: HomeContentProps) {
                     ))}
                   </div>
                 </div>
-              </div>
+              </AnimatedInView>
 
               <div className="mt-8">
-                <h4 className="text-xl font-bold text-dark mb-4">Follow Us</h4>
+                <AnimatedInView as="h4" className="text-xl font-bold text-dark mb-4" variant="fade-in">
+                  Follow Us
+                </AnimatedInView>
                 <div className="flex space-x-4">
                   {socialLinks.map((link) => (
                     <a
@@ -144,7 +176,7 @@ export default function HomeContent({ initialContent }: HomeContentProps) {
                       href={link.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-blue hover:text-blue/80"
+                      className="text-blue hover:text-blue/80 transition-transform duration-200 transform-gpu hover:-translate-y-0.5"
                     >
                       {link.label}
                     </a>

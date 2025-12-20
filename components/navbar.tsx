@@ -23,21 +23,33 @@ export default function Navbar() {
           </div>
 
           <nav className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-dark hover:text-coral font-medium">
+            <a
+              href="#"
+              className="text-dark hover:text-coral font-medium transition-transform duration-200 transform-gpu hover:-translate-y-0.5"
+            >
               Home
             </a>
-            <a href="#about" className="text-dark hover:text-coral font-medium">
+            <a
+              href="#about"
+              className="text-dark hover:text-coral font-medium transition-transform duration-200 transform-gpu hover:-translate-y-0.5"
+            >
               About
             </a>
-            <a href="#menu" className="text-dark hover:text-coral font-medium">
+            <a
+              href="#menu"
+              className="text-dark hover:text-coral font-medium transition-transform duration-200 transform-gpu hover:-translate-y-0.5"
+            >
               Menu
             </a>
-            <a href="#contact" className="text-dark hover:text-coral font-medium">
+            <a
+              href="#contact"
+              className="text-dark hover:text-coral font-medium transition-transform duration-200 transform-gpu hover:-translate-y-0.5"
+            >
               Contact
             </a>
             <a
               href="tel:+17755077515"
-              className="bg-coral hover:bg-coral/80 text-white px-4 py-2 rounded-full font-medium transition duration-300"
+              className="bg-coral hover:bg-coral/80 text-white px-4 py-2 rounded-full font-medium transition duration-300 transform-gpu hover:-translate-y-0.5"
             >
               (775) 507-7515
             </a>
@@ -57,35 +69,35 @@ export default function Navbar() {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <a
               href="#"
-              className="block px-3 py-2 rounded-md text-base font-medium text-dark hover:text-coral hover:bg-coral/10"
+              className="block px-3 py-2 rounded-md text-base font-medium text-dark hover:text-coral hover:bg-coral/10 transition-transform duration-200 transform-gpu hover:-translate-y-0.5"
               onClick={toggleMenu}
             >
               Home
             </a>
             <a
               href="#about"
-              className="block px-3 py-2 rounded-md text-base font-medium text-dark hover:text-coral hover:bg-coral/10"
+              className="block px-3 py-2 rounded-md text-base font-medium text-dark hover:text-coral hover:bg-coral/10 transition-transform duration-200 transform-gpu hover:-translate-y-0.5"
               onClick={toggleMenu}
             >
               About
             </a>
             <a
               href="#menu"
-              className="block px-3 py-2 rounded-md text-base font-medium text-dark hover:text-coral hover:bg-coral/10"
+              className="block px-3 py-2 rounded-md text-base font-medium text-dark hover:text-coral hover:bg-coral/10 transition-transform duration-200 transform-gpu hover:-translate-y-0.5"
               onClick={toggleMenu}
             >
               Menu
             </a>
             <a
               href="#contact"
-              className="block px-3 py-2 rounded-md text-base font-medium text-dark hover:text-coral hover:bg-coral/10"
+              className="block px-3 py-2 rounded-md text-base font-medium text-dark hover:text-coral hover:bg-coral/10 transition-transform duration-200 transform-gpu hover:-translate-y-0.5"
               onClick={toggleMenu}
             >
               Contact
             </a>
             <a
               href="tel:+17755077515"
-              className="block px-3 py-2 rounded-md text-base font-medium bg-coral text-white hover:bg-coral/80"
+              className="block px-3 py-2 rounded-md text-base font-medium bg-coral text-white hover:bg-coral/80 transition-transform duration-200 transform-gpu hover:-translate-y-0.5"
               onClick={toggleMenu}
             >
               Call Us: (775) 507-7515
