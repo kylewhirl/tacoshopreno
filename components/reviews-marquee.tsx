@@ -248,7 +248,16 @@ export default function ReviewsMarquee() {
                     {"★".repeat(review.rating)}
                   </div>
                 </div>
-                <p className="text-base leading-relaxed text-dark/80">“{review.text}”</p>
+                <p
+                  className="text-base leading-relaxed text-dark/80 overflow-hidden whitespace-normal break-words text-ellipsis"
+                  style={{
+                    display: "-webkit-box",
+                    WebkitLineClamp: 2,
+                    WebkitBoxOrient: "vertical",
+                  }}
+                >
+                  “{review.text}”
+                </p>
               </article>
             ))}
           </div>
