@@ -2,11 +2,11 @@ import type { MenuSectionData } from "@/lib/site-content"
 
 export default function MenuSection({ title, description, pricing, items }: MenuSectionData) {
   return (
-    <div className="bg-white p-6 rounded-lg shadow-lg">
+    <div className="bg-white p-6 rounded-lg shadow-lg transition-transform duration-300 transform-gpu hover:-translate-y-1 hover:shadow-xl motion-safe:animate-fade-in-up">
       <div className="border-b border-dark/20 pb-4 mb-6">
         <h3 className="text-2xl font-bold text-coral">{title}</h3>
-        {description && <p className="text-dark/70 mt-1">{description}</p>}
-        {pricing && <p className="text-coral font-medium mt-1">{pricing}</p>}
+        {description && <p className="text-dark/70 mt-1 motion-safe:animate-fade-in">{description}</p>}
+        {pricing && <p className="text-coral font-medium mt-1 motion-safe:animate-fade-in">{pricing}</p>}
       </div>
 
       <ul className="space-y-4">
