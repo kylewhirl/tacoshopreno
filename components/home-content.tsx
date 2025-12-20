@@ -86,18 +86,6 @@ export default function HomeContent({ initialContent }: HomeContentProps) {
             Our <span className="text-coral">Menu</span>
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
-            <div className="relative h-96 rounded-lg overflow-hidden shadow-xl">
-              <Image src="/images/menu.jpeg" alt="Taco Shop Menu" fill className="object-contain" />
-            </div>
-            <div className="flex flex-col justify-center">
-              <h3 className="text-2xl font-bold text-coral mb-4">Authentic Mexican Cuisine</h3>
-              <p className="text-lg text-dark">
-                Customize the menu below at any time—the changes you save on the admin page appear here immediately.
-              </p>
-            </div>
-          </div>
-
           <MenuDisplay sections={menu.sections} />
         </div>
       </section>
