@@ -8,7 +8,8 @@ interface CTAButtonProps {
 }
 
 export default function CTAButton({ href, children, variant = "primary", className = "" }: CTAButtonProps) {
-  const baseClasses = "font-bold py-3 px-8 rounded-full transition duration-300 flex items-center justify-center"
+  const baseClasses =
+    "font-bold py-3 px-8 rounded-full transition duration-300 flex items-center justify-center transform-gpu hover:-translate-y-0.5 active:translate-y-0"
 
   const variantClasses = {
     primary: "bg-coral text-white hover:bg-coral/80",
