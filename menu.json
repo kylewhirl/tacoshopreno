@@ -1,20 +1,20 @@
 {
   "hero": {
-    "title": "Authentic Mexican Cuisine",
-    "subtitle": "Experience the true flavors of Mexico at Taco Shop in Reno, Nevada.",
+    "title": "Fresh, Flavorful Tacos & More",
+    "subtitle": "Reno’s beloved taco spot — delicious tacos, bold sauces, and friendly service.",
     "primaryCta": { "label": "View Our Menu", "href": "#menu" },
     "secondaryCta": { "label": "Call to Order", "href": "tel:+17755077515" }
   },
   "important": {
-    "announcement": "Family-owned and operated in the heart of downtown Reno.",
-    "highlight": "Authentic Mexican cuisine in the heart of Reno, Nevada."
+    "announcement": "Family-run taco shop tucked away behind Death & Taxes in downtown Reno.",
+    "highlight": "Authentic street-style tacos and more — well worth the find!"
   },
   "about": {
-    "heading": "Fresh & Authentic",
-    "highlight": "Mexican Food",
+    "heading": "Local Favorite With Big Flavor",
+    "highlight": "Fresh, Delicious, and Unforgettable",
     "paragraphs": [
-      "At Taco Shop, we pride ourselves on serving the most authentic Mexican cuisine in Reno. Our recipes have been passed down through generations, bringing the true flavors of Mexico to your plate.",
-      "We use only the freshest ingredients, locally sourced when possible, to create delicious tacos, burritos, and more that will transport your taste buds straight to Mexico."
+      "At Taco Shop, customers come back again and again for tacos that are consistently fresh, full of flavor, and authentically prepared. Whether it’s classic carne asada, crispy fish, or creative options like cheeseburger and veggie tacos, every bite delivers bold taste.",
+      "Locals and visitors alike love our welcoming service, delicious house-made sauces, and casual outdoor seating. With reasonable prices and quality you’ll notice in every bite, Taco Shop turns first-timers into regulars."
     ]
   },
   "contact": {
