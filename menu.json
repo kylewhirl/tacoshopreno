@@ -35,7 +35,7 @@
       {
         "title": "TACOS",
         "description": "Soft corn tortillas, choice of salsa: roja, verde or pico",
-        "pricing": "2 for $7 or 3 for $9",
+        "pricing": "No mix & match · 2 for $7 or 3 for $10",
         "items": [
           { "name": "Carnitas", "description": "Crispy pork, onions, cilantro" },
           { "name": "Pastor", "description": "Marinated pork, grilled onion & pineapple, cilantro" },
@@ -43,7 +43,7 @@
           { "name": "Cheeseburger", "description": "American cheese, lettuce, tomato, onion, house spread" },
           { "name": "Chicken", "description": "Onions, cilantro" },
           { "name": "Asada", "description": "Onions, cilantro" },
-          { "name": "Crispy Fish Taco", "description": "Cabbage slaw, avocado crema" },
+          { "name": "Crispy Fish Taco", "price": "2 for $8 or 3 for $11", "description": "Cabbage slaw, avocado crema, and avocado slices" },
           { "name": "Veggie", "description": "Fried cauliflower, green apple, green pepper, onions & cilantro" }
         ]
       },
@@ -53,41 +53,47 @@
         "items": [
           {
             "name": "Burrito",
-            "price": "$9.50",
-            "description": "Chicken, cheese, black beans, rice, corn, pico de gallo, chips + salsa"
+            "price": "$11",
+            "description": "Chicken, cheese, black beans, rice, pico de gallo, chips + salsa"
           },
           {
             "name": "Nachos",
-            "price": "$10.25",
-            "description": "Chicken, cheese, black beans, corn, pico de gallo, avocado crema, sour cream, jalapeños"
+            "price": "$12",
+            "description": "Chicken, cheese, black beans, corn, pico de gallo, avocado, sour cream, crema, jalapeños. *Asada: $1.75"
           },
           {
             "name": "Quesadilla",
-            "price": "$9",
+            "price": "$10",
             "description": "Chicken, green & red peppers, cheese, onions, chipotle sauce, sour cream, salsa, corn"
           },
           {
             "name": "3 Taquitos",
-            "price": "$7.50",
+            "price": "$8.50",
             "description": "Chicken, tomato sauce, lettuce, cotija, sour cream"
           },
           {
             "name": "Torta",
-            "price": "$9",
+            "price": "$10",
             "description": "Choice of chicken, asada, pastor or carnitas, onion, lettuce, tomato, avocado, queso fresco, sour cream, jalapeños"
+          },
+          {
+            "name": "Fish Burritos",
+            "price": "$12",
+            "description": "Cheese, black beans, rice, pico de gallo, chips + salsa"
           }
         ]
       },
       {
         "title": "SIDES",
         "items": [
-          { "name": "Wholly Guacamole", "price": "$8", "description": "Choice of regular or mex" },
-          { "name": "Chips & Dips", "price": "$4", "description": "Choice of verde or rojo w/pico de gallo" },
-          { "name": "Black Beans", "price": "$4" },
-          { "name": "Rice", "price": "$4" },
-          { "name": "Sliced Avocado", "price": "$1" },
-          { "name": "Sour Cream", "price": "50 cents" },
-          { "name": "Cheese", "price": "$1" }
+          { "name": "Wholly Guacamole", "price": "$9", "description": "Choice of regular or mex, with corn chips" },
+          { "name": "Chips & Dips", "price": "$5", "description": "Choice of verde or rojo w/ pico de gallo" },
+          { "name": "Black Beans", "price": "$5" },
+          { "name": "Rice", "price": "$5" },
+          { "name": "Sliced Avocado", "price": "$1.75" },
+          { "name": "Sour Cream", "price": "$1.00" },
+          { "name": "Cheese", "price": "$1.50" },
+          { "name": "Grill Peppers", "price": "$1.50" }
         ]
       },
       {
