@@ -252,7 +252,7 @@ export default function ReviewsMarquee() {
                   className="text-base leading-relaxed text-dark/80 overflow-hidden whitespace-normal break-words text-ellipsis"
                   style={{
                     display: "-webkit-box",
-                    WebkitLineClamp: 2,
+                    WebkitLineClamp: 3,
                     WebkitBoxOrient: "vertical",
                   }}
                 >
