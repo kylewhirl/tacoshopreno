@@ -5,6 +5,7 @@ import { Clock, MapPin, MenuIcon, Phone } from "lucide-react"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import ImageMarquee from "@/components/image-marquee"
+import ReviewsMarquee from "@/components/reviews-marquee"
 import CTAButton from "@/components/cta-button"
 import ContactMap from "@/components/contact-map"
 import MenuDisplay from "@/components/menu-display"
@@ -156,6 +157,8 @@ export default function HomeContent({ initialContent }: HomeContentProps) {
           </div>
         </div>
       </section>
+
+      <ReviewsMarquee />
 
       <Footer contact={contact} important={important} socialLinks={socialLinks} />
     </div>
