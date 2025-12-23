@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: "/tacoshopreno",
+  assetPrefix: "/tacoshopreno",
   typescript: {
     ignoreBuildErrors: true,
   },
