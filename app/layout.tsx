@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/images/feature.png.webp",
+        url: "images/feature.png.webp",
         width: 1200,
         height: 630,
         alt: "Exterior of Taco Shop in Reno",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title,
     description,
-    images: ["/images/feature.png.webp"],
+    images: ["images/feature.png.webp"],
   },
   icons: {
     icon: [{ url: "/favicon.ico", type: "image/x-icon" }],
