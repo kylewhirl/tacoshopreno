@@ -27,7 +27,7 @@ export default function HomeContent({ initialContent }: HomeContentProps) {
 
       <section className="relative h-[80vh] min-h-[600px] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <Image src="/images/feature.png.webp" alt="Exterior of Taco Shop in Reno" fill className="object-cover" priority />
+          <Image src="images/feature.png.webp" alt="Exterior of Taco Shop in Reno" fill className="object-cover" priority />
           <div className="absolute inset-0 bg-dark/40"></div>
         </div>
 
@@ -97,7 +97,7 @@ export default function HomeContent({ initialContent }: HomeContentProps) {
             </div>
             <div className="relative h-80 rounded-lg overflow-hidden shadow-xl group">
               <Image
-                src="/images/patio.webp"
+                src="images/patio.webp"
                 alt="Taco Shop patio seating"
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"

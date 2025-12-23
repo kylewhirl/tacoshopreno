@@ -17,7 +17,7 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <a href="#" className="flex items-center">
-              <Image src="/images/icon.svg" alt="Taco Shop Logo" width={40} height={40} />
+              <Image src="images/icon.svg" alt="Taco Shop Logo" width={40} height={40} />
               <span className="ml-2 text-xl font-bold text-coral">Taco Shop</span>
             </a>
           </div>

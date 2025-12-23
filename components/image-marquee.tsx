@@ -6,42 +6,42 @@ import Image from "next/image"
 // Image data for the marquee
 const images = [
   {
-    src: "/images/al-pastor.webp",
+    src: "images/al-pastor.webp",
     alt: "Al pastor tacos topped with pineapple",
     caption: "Al Pastor Tacos",
   },
   {
-    src: "/images/cheeseburger.webp",
+    src: "images/cheeseburger.webp",
     alt: "Cheeseburger taco sizzling on the griddle",
     caption: "Cheeseburger Tacos",
   },
   {
-    src: "/images/fish.webp",
+    src: "images/fish.webp",
     alt: "Crispy fish tacos with cabbage slaw",
     caption: "Crispy Fish Tacos",
   },
   {
-    src: "/images/patio.webp",
+    src: "images/patio.webp",
     alt: "Outdoor patio with guests dining",
     caption: "Patio Dining",
   },
   {
-    src: "/images/doors.webp",
+    src: "images/doors.webp",
     alt: "Taco Shop entrance doors",
     caption: "Front Entrance",
   },
   {
-    src: "/images/sign.webp",
+    src: "images/sign.webp",
     alt: 'Exterior "Get Tacos" sign',
     caption: "Exterior",
   },
   {
-    src: "/images/menu.jpeg",
+    src: "images/menu.jpeg",
     alt: "Taco Shop printed menu",
     caption: "House Menu",
   },
   {
-    src: "/images/feature.png.webp",
+    src: "images/feature.png.webp",
     alt: "Exterior of Taco Shop",
     caption: "Storefront",
   },
